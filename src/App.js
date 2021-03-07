@@ -18,6 +18,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import cmdfDesktop from "./images/cmdf.png";
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import blush from './images/croods.png';
 // eslint-disable-next-line no-lone-blocks
 {
   /*import React, {useState} from 'react';
@@ -190,9 +191,9 @@ function App() {
       <div className="Container" id="Container">
       <Header />
         <div className="introduction">
-          <img src={cmdfDesktop} alt="Figma screenshot of initial get started page" className="cmdfDesktop"/>
+          <img src={blush} alt="Blush design of two people interacting virtually" className="blush"/>
           <div className="intro_text">
-            
+            <h3>Bridging the generation gap, one human at a time.</h3>
             <p>Project Connect offers companionship opportunities for the senior community. This platform aims to combat senior isolation and create a safe space to match seniors and volunteers in one seamless online connection.</p>
             <div className="home-btns">
               <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/> Log in
@@ -204,6 +205,7 @@ function App() {
           </div>
         </div>
         <div className="steps">
+        <img src={cmdfDesktop} alt="Figma screenshot of initial get started page" className="cmdfDesktop"/>
           <h2>How the platform works</h2>
           <div className="wrap">
             <div className="card">
