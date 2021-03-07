@@ -55,14 +55,20 @@
 
 .Container Button{
   display: inline;
-
+  background-color: #FFE1E1;
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
+  border-radius: 41px;
+  padding: 1rem 2rem;
 }
 
 #interest Button{
-  width: 50%;
-  height: 150%;
+  background-color: #FFE1E1;
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
 }
-
 
 #platform Button{
   background-color: #FFE1E1;
