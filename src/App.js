@@ -30,7 +30,7 @@ function App() {
       <Header />
       <Form>
         <Form.Group controlId="basicPhone">
-          <Form.Label>Phone Number:</Form.Label>
+          <Form.Label>Phone number:</Form.Label>
           <Form.Control type="text" placeholder="(123) 456-7890">
           </Form.Control>
         </Form.Group>
