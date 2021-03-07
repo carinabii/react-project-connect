@@ -15,13 +15,13 @@ import elderlywoman2 from "./images/eldw2.jpg";
 import elderlyman from "./images/eldma.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import cmdfDesktop from "./images/cmdf.png";
+
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import blush from './images/croods.png';
 // eslint-disable-next-line no-lone-blocks
 {
-  /*import React, {useState} from 'react';
+  /*import cmdfDesktop from "./images/cmdf.png";import React, {useState} from 'react';
 import React, {useState} from 'react';
 import InputBox from './components/InputBox';import Login from './components/login.js';*/
 }
