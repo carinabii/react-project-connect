@@ -195,11 +195,11 @@ function App() {
             
             <p>Project Connect offers companionship opportunities for the senior community. This platform aims to combat senior isolation and create a safe space to match seniors and volunteers in one seamless online connection.</p>
             <div className="home-btns">
-              <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/> Log in{" "}
+              <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/> Log in
               </Button>
-    <br></br><br></br>
-              <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faLightbulb} className="FontAwesomeIcon"/> Register{" "}</Button>
-              </Button>
+    
+              <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faLightbulb} className="FontAwesomeIcon"/> Register</Button>
+              
             </div>
           </div>
         </div>
