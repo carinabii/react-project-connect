@@ -13,6 +13,8 @@ import PeopleCard from './components/people.js';
 import elderlywoman from './images/elderwoman.jpg';
 import elderlywoman2 from './images/eldw2.jpg';
 import elderlyman from './images/eldma.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 // eslint-disable-next-line no-lone-blocks
 {/*import React, {useState} from 'react';
 import React, {useState} from 'react';
@@ -191,7 +193,7 @@ function App() {
   return (
     <div className='Container' id='Container'>  
       <Header />
-      <Button onClick={login} variant="secondary" type="submit">Log in</Button>
+      <Button onClick={login} variant="secondary" type="submit">Log in <FontAwesomeIcon icon={faArrowRight} /></Button>
       <br/>
       <br/>
       <Button onClick={register} variant="secondary" type="submit">Register</Button>
