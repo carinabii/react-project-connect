@@ -68,8 +68,8 @@ border: 5px solid;
   margin: auto;
   align-items: middle;
   padding:1rem;
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .FooterSources {
  list-style-type: circle;
@@ -155,19 +155,39 @@ h4 {
   color: #ffffff;
 }
 
+
 #interest Button{
+  display: inline;
   background-color: #FFE1E1;
   color: black;
   font-weight: 500;
   font-size: 24px;
+  border-radius: 41px;
+  padding: 1rem 2rem;
+}
+
+#interest Button:hover,
+#interest Button:active {
+  background: #6C91DB;
+  color: #ffffff;
 }
 
 #platform Button{
+  display: inline;
   background-color: #FFE1E1;
   color: black;
   font-weight: 500;
   font-size: 24px;
+  border-radius: 41px;
+  padding: 1rem 2rem;
 }
+
+#platform Button:hover,
+#platform Button:active {
+  background: #6C91DB;
+  color: #ffffff;
+}
+
 .pagination .bold {
   font-weight: 500;
   margin:.3rem;
