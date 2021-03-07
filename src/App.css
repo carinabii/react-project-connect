@@ -184,3 +184,10 @@ p {
   border-radius: 41px;
   padding: 2rem 2rem;
 }
+
+.Card {
+  width: '25rem'; height: '10rem'; border-radius:'15px'
+}
+.suggestions {
+  height:100%;
+}

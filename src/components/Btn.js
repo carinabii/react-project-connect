@@ -1,19 +1,21 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const Btn = ({id, text, color}) => {
 
     return (
 
-    <Button 
+    <Card>
+        <Card.Body
     id={id}
-    variant="secondary"
-    // style={{backgroundColor: color}}
+    style={{backgroundColor: color, padding:'4rem', borderRadius:'15px' }}
     color="steelblue"
     className='btn'
     >
         {text}
-        </Button>
+        
+  </Card.Body>
+  </Card>
     )
 }
 

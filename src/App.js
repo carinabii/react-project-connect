@@ -15,7 +15,8 @@ import elderlywoman2 from "./images/eldw2.jpg";
 import elderlyman from "./images/eldma.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
+import rogers from './images/rogers.png';
+import ravi from './images/ravi.png';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import blush from './images/croods.png';
@@ -33,6 +34,7 @@ function App() {
       <div id="login">
         <Header />
         <Form>
+       
           <Form.Group controlId="basicPhone">
             <Form.Label>Phone number:</Form.Label>
             <Form.Control
@@ -62,9 +64,15 @@ function App() {
       <div id='register'>      
       <Header />
       <Form>
-        <Form.Group controlId="name">
-          <Form.Label>What's your name?</Form.Label>
-          <Form.Control type="text" placeholder="Wanda Vision">
+        <Form.Group controlId="firstname">
+          <Form.Label>What's your first name?</Form.Label>
+          <Form.Control type="text" placeholder="Wanda">
+          </Form.Control>
+        </Form.Group>
+
+        <Form.Group controlId="lastname">
+          <Form.Label>What's your last name?</Form.Label>
+          <Form.Control type="text" placeholder="Vision">
           </Form.Control>
         </Form.Group>
 
@@ -113,7 +121,7 @@ function App() {
         </Row>
         <br/>
         <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} className="FontAwesomeIcon"/> Go back</Button> 
-        <Button variant="secondary" id="submitInterests" onClick={platform}>Next <FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
+        <Button variant="secondary" id="submitInterests" onClick={platform}> Next <FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
       </Form.Group>
       </Form>
       {/* <form id="interestForm"> */}
@@ -153,23 +161,33 @@ function App() {
       {
         name: "Melvin Tang",
         image: elderlyman,
-        imageALT: "#",
+        imageALT: "Profile photo of Melvin Tang",
       },
       {
         name: "Meryl Streep",
         image: elderlywoman,
-        imageALT: "#",
+        imageALT: "Profile photo of Meryl Streep",
       },
       {
         name: "Mae Ploy",
         image: elderlywoman2,
-        imageALT: "#",
+        imageALT: "Profile photo of Mae Ploy",
+      },
+      {
+        name: "Ravi Singh",
+        image: ravi,
+        imageALT: "Profile photo of Ravi Singh",
+      },
+      {
+        name: "Steve Rogers",
+        image: rogers,
+        imageALT: "Profile photo of Steve Rogers",
       },
     ];
 
     ReactDOM.render(
       <div id="suggestions">
-        <h1>Choose a person you'd like to connect with:</h1>
+        <h1>People who share your interests</h1>
         <CardDeck>
           {people.map((people) => {
             return (
@@ -203,38 +221,15 @@ function App() {
               
             </div>
           </div>
-        </div> {/*
-        <div className="steps">
-           <h2>How the platform works</h2> 
-                   <div className="wrap">
-            <div className="home-card">
-              <div class="home-card-body">
-                <h4>1. Create your profile</h4>
-              </div>
-            </div>
-            <div className="home-card">
-              <div class="home-card-body">
-                <h4>2. Find others with your same interest</h4>
-              </div>
-            </div>
-            <div className="home-card">
-              <div class="home-card-body">
-                <h4>3. Start your conversation</h4>
-              </div>
-         
-          </div>
-          <img src={cmdfDesktop} alt="Figma screenshot of initial get started page" className="cmdfDesktop"/>
-     
-        </div>
-          </div>*/}
+        </div> 
         
   </div>
       <div className="footer">
         <h3>Source Code</h3>
         <ul className="FooterSources">
-          <li>GitHub</li>
-          <li>DevPost</li>
-          <li>Figma</li>
+          <li><a href="https://github.com/carinabii/react-project-connect">GitHub</a></li>
+          <li><a href="https://devpost.com/software/project-connect-26mv49">DevPost</a></li>
+          <li><a href="https://www.figma.com/file/qb9fb23xYQHAQeufe5vK9V/cmd-f?node-id=2%3A179">Figma</a></li>
         </ul>
         <p>A cmd-f 2021 Project</p>
       </div>
