@@ -32,7 +32,9 @@
   color: white;
 }
 
-
+.FontAwesomeIcon {
+background-color: transparent;
+}
 .App-link {
   color: #61dafb;
 }
@@ -45,11 +47,39 @@
     transform: rotate(360deg);
   }
 }
-
+.main {
+  margin-top:3rem;
+height: 100vh;
+max-width: 100vw;
+}
+.cmdfDesktop {
+  width:50%;
+}
+.footer {
+  width:90vw;
+  margin: auto;
+  align-items: middle;
+  padding:1rem;
+display: flex;
+justify-content: space-between;
+}
+.FooterSources li {
+  display: inline-block;
+}
+.introduction {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+.home-btns button{
+  margin:1.2rem;
+}
 .Container {
-  width: 90%;
-  margin: 5%;
-  padding: 3%;
+  align-items: center;
+  width: 90vw;
+  height:90vh;
+  margin: auto;
+  padding:3rem;
   border: 5px solid black;
 }
 
