@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Button = ({text, color}) => {
+const Btn = ({id, text, color}) => {
 
     return (
 
     <button 
+    id={id}
     style={{backgroundColor: color}}
     className='btn'
     >
@@ -13,4 +14,4 @@ const Button = ({text, color}) => {
     )
 }
 
-export default Button
+export default Btn

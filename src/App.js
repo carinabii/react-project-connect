@@ -1,4 +1,7 @@
 import Header from './components/Header'
+import Btn from './components/Btn'
+import InputBox from './components/InputBox'
+
 import Button from 'react-bootstrap/Button';
 import ReactDOM from 'react-dom';
 import './App.css';
@@ -8,23 +11,28 @@ import Login from '';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // eslint-disable-next-line no-lone-blocks
 {/*import React, {useState} from 'react';*/}
+import React, {useState} from 'react';
+
 
 function App() {
   function login(){
+    // figure out how to store data into a database after every submit button is clicked.
     ReactDOM.render(
       <div id='login'>      
       <Header />
       <Login/>
       {/*<form id="loginForm">
+      <form id="loginForm">
+        {/* <InputBox id="phoneNum" text="Phone Number:"/> 
         <label htmlFor="phoneNum">Phone Number:</label>
         <input type="text" id="phoneNum"/>
         <br/>
         <label htmlFor="verify">Verification Code</label>
         <input type="text" id="verify"/>
         <br/>
-        <Button id="submitLogin">Submit</Button>
-      </form>
-    */}
+        <Button id="submitLogin" onClick={suggestions}>Submit</Button>
+      </form>*/}
+    
       </div>,
        document.getElementById('Welcome'));
   }
@@ -53,27 +61,50 @@ function App() {
   function interests(){
     ReactDOM.render(
       <div id='interest'>      
-      <h1>Hello! </h1>
-      <h1>Welcome to Project Connect.</h1>
-      <p>What are your interests?</p>
+      <h1>What are your interests?</h1>
       <form id="interestForm">
-        <Button id="cooking">Cooking</Button>
-        <Button id="sports">Sports</Button>
+        <Btn id="cooking" color="yellow" text="Cooking"/>
+        <Btn id="sports" color="pink" text="Sports"/>
         <br/>
         <br/>
-        <Button id="music">Music</Button>
-        <Button id="gardening">Gardening</Button>
+        <Btn id="music" color="pink" text="Music"/>
+        <Btn id="gardening" color="yellow" text="Gardening"/>
         <br/>
         <br/>
-        <Button id="knitting">Knitting</Button>
-        <Button id="history">History</Button>
+        <Btn id="sports" color="yellow" text="Sports"/>
+        <Btn id="history" color="pink" text="History"/>
         <br/>
         <br/>
-        <Button id="submitInterests">Submit</Button>
+        <Button id="submitInterests" onClick={platform}>Submit</Button>
       </form>
       </div>,
       document.getElementById('Welcome'));
 
+  }
+
+  function platform(){
+    ReactDOM.render(
+      <div id='platform'>      
+      <h1>How would you like to communicate?</h1>
+      <form id="communicationForm">
+      <Button id="face">Face to Face</Button>
+      <Button id="snailMail">Snail Mail</Button>
+      <br/>
+      <br/>
+      <Button id="phone">Over the Phone</Button>
+      <Button id="em">email</Button>
+      <br/>
+      <br/>
+      <Button id="submitPlatform" onClick={suggestions}>Submit</Button>
+    </form>
+    </div>,
+    document.getElementById('Welcome'));
+
+  }
+
+  function suggestions(){
+    // something that allows us to pull data from our database and sort by number of similar interests
+    // print out and display best options
   }
 
   return (
