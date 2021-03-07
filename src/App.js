@@ -1,6 +1,6 @@
 import Header from './components/Header'
 import Btn from './components/Btn'
-import Card from 'react-bootstrap/Card';
+
 import Button from 'react-bootstrap/Button';
 import { Form } from 'react-bootstrap';
 import { Col , Row } from "react-bootstrap";
@@ -11,6 +11,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import CardDeck from 'react-bootstrap/CardDeck';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PeopleCard from './components/people.js';
+import elderlywoman from './images/elderwoman.jpg';
+import elderlywoman2 from './images/eldw2.jpg';
+import elderlyman from './images/eldma.jpg';
 // eslint-disable-next-line no-lone-blocks
 {/*import React, {useState} from 'react';
 import React, {useState} from 'react';
@@ -147,19 +150,19 @@ function App() {
     const people = [
       {
         name: "Melvin Tang",
-        image: "https://unsplash.com/photos/rsMUNNy0Gk4",
+        image: elderlyman,
         imageALT:
           "#",
       },
       {
         name: "Meryl Streep",
-        image: "https://unsplash.com/photos/jBBaKSjhmqk",
+        image: elderlywoman,
         imageALT:
           "#",
       },
       {
         name: "Mae Ploy",
-        image: "https://unsplash.com/photos/jBBaKSjhmqk",
+        image: elderlywoman2,
         imageALT:
           "#",
       },
@@ -170,7 +173,7 @@ function App() {
     <div id="suggestions">
       <h1>Choose a person you'd like to connect with:</h1>
       <CardDeck>
-  <Card>
+ 
     {
       people.map(people => {
         return <PeopleCard 
@@ -180,7 +183,7 @@ function App() {
         />
       })
     }
-  </Card>
+    
 </CardDeck>
  </div>,
     document.getElementById('Container'));
