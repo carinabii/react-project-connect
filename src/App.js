@@ -74,18 +74,6 @@ function App() {
         <Button onClick={interests} variant="secondary" type="submit">Submit</Button>
       </Form>
 
-      {/* <form id="registerForm">
-        <label htmlFor="name">What's your name?</label>
-        <input type="text" id="name" placeholder="Wanda Vision"/>
-        <br/>
-        <label htmlFor="num">What's your phone number?</label>
-        <input type="text" id="num" placeholder="(909) 344-3638"/>
-        <br/>
-        <label htmlFor="email">What's your email?</label>
-        <input type="text" id="email" placeholder="wandavision@gmail.com"/>
-        <br/>
-        <Button id="submitRegistration" onClick={interests}>Submit</Button>
-      </form> */}
       </div>,
        document.getElementById('Container'));
   
@@ -95,7 +83,6 @@ function App() {
     ReactDOM.render(
       <div id='interest'>      
       <h1>What are your interests?</h1>
-      <br/>
       <Form>
         <Form.Group controlID="interestForm">
         <Row>
@@ -115,7 +102,7 @@ function App() {
         </Row>
         <br/>
         <Button variant="secondary" id="submitInterests" onClick={platform}>Submit</Button>
-        </Form.Group>
+      </Form.Group>
       </Form>
       {/* <form id="interestForm"> */}
 
