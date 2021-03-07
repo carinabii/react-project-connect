@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-
+import { peopleCard, CockroachDB_Placeholder } from './components/people.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import People from './components/people.js';
 // eslint-disable-next-line no-lone-blocks
@@ -143,14 +143,17 @@ function App() {
   }
 
   function suggestions(){
-    // something that allows us to pull data from our database and sort by number of similar interests
-    // print out and display best options
     ReactDOM.render(
-      <div id='suggestions'>
+ 
+    <div id="suggestions">
+      <h1 className="font-weight-bold">Choose a person you'd like to connect with:</h1>
 
-      <People />
-       </div>,
-    document.getElementById('Welcome'));
+      <Button id="waitMatch"  >Setup a meeting!</Button>
+
+      </div>
+
+      ,
+    document.getElementById('Container'));
   }
 
   return (
@@ -160,9 +163,7 @@ function App() {
       <br/>
       <br/>
       <Button onClick={register} variant="secondary" type="submit">Register</Button>
-      <br/>
-      <br/>
-      <Button onClick={People}>People Test</Button>
+    
       <br/>
       <br/>
 
