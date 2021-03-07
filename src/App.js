@@ -79,8 +79,8 @@ function App() {
           </Form.Control>
         </Form.Group>
 
-        <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} /> Go back</Button> 
-        <Button onClick={interests} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} /></Button>
+        <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} className="FontAwesomeIcon"/> Go back</Button> 
+        <Button onClick={interests} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
       </Form>
 
       </div>,
@@ -111,8 +111,8 @@ function App() {
           <Col><Btn id="history" color="pink" text="History"/></Col>
         </Row>
         <br/>
-        <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} /> Go back</Button> 
-        <Button variant="secondary" id="submitInterests" onClick={platform}><FontAwesomeIcon icon={faArrowRight} /></Button>
+        <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} className="FontAwesomeIcon"/> Go back</Button> 
+        <Button variant="secondary" id="submitInterests" onClick={platform}>Next <FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
       </Form.Group>
       </Form>
       {/* <form id="interestForm"> */}
