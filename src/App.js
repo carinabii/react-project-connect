@@ -3,17 +3,19 @@ import Button from 'react-bootstrap/Button';
 import ReactDOM from 'react-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import React, {useState} from 'react';
 
-
-
+import Login from '';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// eslint-disable-next-line no-lone-blocks
+{/*import React, {useState} from 'react';*/}
 
 function App() {
   function login(){
     ReactDOM.render(
       <div id='login'>      
       <Header />
-      <form id="loginForm">
+      <Login/>
+      {/*<form id="loginForm">
         <label htmlFor="phoneNum">Phone Number:</label>
         <input type="text" id="phoneNum"/>
         <br/>
@@ -22,6 +24,7 @@ function App() {
         <br/>
         <Button id="submitLogin">Submit</Button>
       </form>
+    */}
       </div>,
        document.getElementById('Welcome'));
   }
