@@ -60,9 +60,32 @@
 
 #interest Button{
   width: 50%;
-  
+  height: 150%;
+}
+
+
+#platform Button{
+  background-color: #FFE1E1;
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 h1 {
   font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.form-group	{
+  font-weight:500;
+  font-size: 30px;
+}
+
+.form-control:valid {
+  background-color:  #FFE1E1!important;
+  font-size: 24px;
 }
