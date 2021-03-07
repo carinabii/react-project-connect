@@ -44,3 +44,20 @@
     transform: rotate(360deg);
   }
 }
+
+.Container {
+  width: 90%;
+  margin: 5%;
+  padding: 3%;
+  border: 5px solid black;
+}
+
+.Container Button{
+  display: inline;
+
+}
+
+#interest Button{
+  width: 50%;
+  
+}
