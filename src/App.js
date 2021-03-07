@@ -193,7 +193,7 @@ function App() {
           <img src={cmdfDesktop} alt="Figma screenshot of initial get started page" className="cmdfDesktop"/>
           <div className="intro_text">
             
-            <h3>Project Connect aims to match </h3>
+            <p>Project Connect offers companionship opportunities for the senior community. This platform aims to combat senior isolation and create a safe space to match seniors and volunteers in one seamless online connection.</p>
             <div className="home-btns">
               <Button onClick={login} variant="secondary" type="submit">
                 Log in{" "}
@@ -210,6 +210,26 @@ function App() {
                   className="FontAwesomeIcon"
                 />
               </Button>
+            </div>
+          </div>
+        </div>
+        <div className="steps">
+          <h2>How the platform works</h2>
+          <div className="wrap">
+            <div className="card">
+              <div class="card-body">
+                <h4>1. Become a member</h4>
+              </div>
+            </div>
+            <div className="card">
+              <div class="card-body">
+                <h4>2. Let people know your interests</h4>
+              </div>
+            </div>
+            <div className="card">
+              <div class="card-body">
+                <h4>3. Find others with your same interest</h4>
+              </div>
             </div>
           </div>
         </div>
