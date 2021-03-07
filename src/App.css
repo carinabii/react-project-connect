@@ -6,7 +6,8 @@
 }
 
 *{
-  background-color: antiquewhite;
+  background-color: #FFFBF1;
+  font-family: 'Montserrat';
 }
 
 .App-logo {
@@ -63,10 +64,5 @@
 }
 
 h1 {
-  font-family: 'Montserrat';
   font-weight: 500;
-}
-
-p {
-  font-family: 'Montserrat';
 }
