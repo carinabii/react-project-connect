@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Btn from "./components/Btn";
 import Button from "react-bootstrap/Button";
-import { Form } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
@@ -50,9 +50,8 @@ function App() {
               placeholder="wandavision@xxx.com"
             ></Form.Control>
           </Form.Group>
-          <Button onClick={suggestions} variant="secondary" type="submit">
-            Submit
-          </Button>
+          <br></br>
+          <Button variant="secondary" id="submitPlatform" onClick={suggestions}> Submit <FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
         </Form>
        
       </div>,
@@ -87,9 +86,9 @@ function App() {
           <Form.Control type="email" placeholder="wandavision@xxx.ca">
           </Form.Control>
         </Form.Group>
-
-        <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} className="FontAwesomeIcon"/> Go back</Button> 
-        <Button onClick={interests} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
+        <br></br>
+        <Button onClick={Container} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} className="FontAwesomeIcon"/> Go back</Button>  <Button onClick={interests} variant="secondary" type="submit">Submit <FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
+      <br></br>
       </Form>
 
       </div>,
@@ -101,7 +100,7 @@ function App() {
     ReactDOM.render(
 
       <div id='interest'>      
-      <h1>What are your interests?</h1>
+      <h1>What are your <b>interests</b>?</h1><br></br>
       <Form>
         <Form.Group controlID="interestForm">
         <Row>
@@ -120,8 +119,8 @@ function App() {
           <Col><Button id="history">History</Button></Col>
         </Row>
         <br/>
-        <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} className="FontAwesomeIcon"/> Go back</Button> 
-        <Button variant="secondary" id="submitInterests" onClick={platform}> Next <FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
+        <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} className="FontAwesomeIcon"/> Go back</Button>  <Button variant="secondary" id="submitInterests" onClick={platform}> Next <FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
+        <br></br>
       </Form.Group>
       </Form>
       {/* <form id="interestForm"> */}
@@ -136,7 +135,8 @@ function App() {
   function platform() {
     ReactDOM.render(
       <div id="platform">
-        <h1>How would you like to communicate?</h1>
+        <h1>How would you like to <b>communicate</b>?</h1>
+        <br></br>
         <form id="communicationForm">
           <Button id="face">Face to face</Button>
           <Button id="snailMail">Snail mail</Button>
@@ -144,11 +144,9 @@ function App() {
           <br />
           <Button id="phone">Over the phone</Button>
           <Button id="em">Email</Button>
-          <br />
-          <br />
-          <Button id="submitPlatform" onClick={suggestions}>
-            Submit
-          </Button>
+          <br></br>
+          <br></br>
+          <Button onClick={interests} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} className="FontAwesomeIcon"/> Go back</Button>  <Button variant="secondary" id="submitPlatform" onClick={suggestions}> Submit and sign up <FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
         </form>
       </div>,
       document.getElementById("Container")
@@ -193,7 +191,7 @@ function App() {
     ReactDOM.render(
       <div id="suggestions">
         <div className="pagination">
-        <p>Home </p><p> / </p> <p span="bold"> Connect</p>
+        <p>Home / <b>Connect</b></p>
       </div>
         <h1>People who share your interests</h1>
         <CardDeck>
@@ -218,7 +216,7 @@ function App() {
   ReactDOM.render(
     <div id="personas">
       <div className="pagination">
-        <p> Home </p><p>  </p> <p span="bold"> Connect </p>
+      <p>Home / <b>Connect</b></p>
       </div>
       <h1>Meryl Streep's interests</h1>
       <div className="introduction">
@@ -248,7 +246,6 @@ function App() {
             <div className="home-btns">
               <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/> Log in
               </Button>
-    
               <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faLightbulb} className="FontAwesomeIcon"/> Register</Button>
               
             </div>
