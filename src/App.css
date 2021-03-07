@@ -61,3 +61,12 @@
   width: 50%;
   
 }
+
+h1 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Montserrat';
+}
