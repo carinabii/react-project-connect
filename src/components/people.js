@@ -22,7 +22,7 @@ const  PeopleCard = ({ name, image, imageALT }) => (
 );
 
 const People = () => (
-  <Container id="peopleExamples" className="mt-5">
+  <Container id="People" className="mt-5">
     <Row>
       <Col>
         <h1 className="font-weight-bold">Choose a person you'd like to connect with:</h1>
