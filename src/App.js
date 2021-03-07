@@ -135,19 +135,27 @@ function App() {
   function platform() {
     ReactDOM.render(
       <div id="platform">
-        <h1>How would you like to <b>communicate</b>?</h1>
-        <br></br>
-        <form id="communicationForm">
-          <Button id="face">Face to face</Button>
-          <Button id="snailMail">Snail mail</Button>
-          <br />
-          <br />
-          <Button id="phone">Over the phone</Button>
-          <Button id="em">Email</Button>
-          <br></br>
-          <br></br>
-          <Button onClick={interests} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} className="FontAwesomeIcon"/> Go back</Button>  <Button variant="secondary" id="submitPlatform" onClick={suggestions}> Submit and sign up <FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
-        </form>
+        <h1>How would you like to communicate?</h1>
+        <br/>
+        <Form>
+          <Form.Group controlID="communicationForm">
+          <Row>
+            <Col>
+            <Button id="face">Face to face</Button>
+            </Col>
+            <Col><Button id="snailMail">Snail mail</Button></Col>
+          </Row>
+          <br/>
+          <Row>
+            <Col><Button id="phone">Over the phone</Button></Col>
+            <Col><Button id="em">Email</Button></Col>
+          </Row>
+          <br/>
+          <Button id="submitPlatform" onClick={suggestions}>
+            Submit
+          </Button>
+          </Form.Group>
+        </Form>
       </div>,
       document.getElementById("Container")
     );
@@ -201,7 +209,9 @@ function App() {
                 image={people.image}
                 name={people.name}
                 imageAlt={people.imageALT}
-                onclick={people.link}
+                 onClick={people.link}
+                // onClick={personas}
+                
               />
             );
           })}

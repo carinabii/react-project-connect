@@ -33,6 +33,7 @@
 }
 .header {
   text-align: center;
+  margin-top:2%;
 }
 .FontAwesomeIcon {
   background-color: transparent;
@@ -232,6 +233,21 @@ p {
   border-radius: 25px;
  
 }
+
+#interest .btn:hover{
+  color:#6C91DB;
+  border:2px solid #6C91DB;
+}
+
+@media (min-width: 600px){
+  .blush{
+    display:block;
+  }
+  .intro_text {
+    display:block;
+  }
+}
+
 .btn .card-body {
   border: transparent !important;
 }

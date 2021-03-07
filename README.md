@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Project Connect
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Inspiration
+For this hackathon, we wanted to build a community-focused app and found inspiration through initiatives such as Tuktu, BeMyEyes, and the UBC Safewalk system. We built Project Connect because we wanted to provide social connection for the elderly (or "seniors") who may feel especially isolated during the pandemic. Through our platform, they will be be provided the contact information of other people and "juniors" with similar interests who want to connect with them and keep them company. 
 
-## Available Scripts
+## What it does
+Project Connect links people based on interests and communication preferences (snail mail, email, calls etc.) through a simple and accessible interface.
 
-In the project directory, you can run:
+## How we built it
+We started with (very) lo-fi user flows and wireframes, and then built a more refined prototype in Figma. The prototype was then translated across into React.
 
-### `npm start`
+We had some trouble thinking through our idea, so we talked with a mentor on how to plan effectively. Rahul Kumar from Accenture helped us create a game plan by creating a timeline and concept poster [link](https://www.mural.co/templates/concept-poster). Since we wanted to learn something new during this hackathon and many of us are first time hackers, we spent a lot of our time going to workshops.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Our tools**: [Google Drive](https://docs.google.com/document/d/1OEOWsWtPK1wFf1HxDBIc1obOWkE3-iJ-PqwL8zYU4ws/edit?usp=sharing), Mural, Figma, Visual Studio Code, React, and lots of Javascript tutorials on Youtube
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Challenges we ran into
+- It was hard to code things and deal with UI elements, especially since most of us are first time hackers! This was also the first time any of us used React.js.
+- We started out with a really complex and ambitious idea that had around five different main features ranging from point accumulation for a gamified incentive to a background check to avoid trolling.
+- *Back-end Development*: Despite all of us going to the Cockroach DB workshop, we still had difficulty understanding how to setup the cloud database on our local machines. Setting up on a windows OS required quite some extra requirements that made, so we created a JSON file to represent the profiles on the Project Connect system.
 
-### `npm test`
+## Accomplishments that we're proud of
+- We went to the React/node.js workshop hosted by Telus, Cockroach DB Workshop, and Hootsuite Q&A
+- Continuously asking for help from mentors
+- Built our first React App!!
+- Getting the JSON array map to show for the profiles :)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What we learned
+The simpler the idea, the better! 
 
-### `npm run build`
+## What's next for Project Connect
+- Implement a database that organizes and allows us to store user input
+- Connect the database to our user interface
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
