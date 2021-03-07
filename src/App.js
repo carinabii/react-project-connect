@@ -162,31 +162,39 @@ function App() {
         name: "Melvin Tang",
         image: elderlyman,
         imageALT: "Profile photo of Melvin Tang",
+        link: "#",
       },
       {
         name: "Meryl Streep",
         image: elderlywoman,
         imageALT: "Profile photo of Meryl Streep",
+        link: {personas},
       },
       {
         name: "Mae Ploy",
         image: elderlywoman2,
         imageALT: "Profile photo of Mae Ploy",
+        link: "#",
       },
       {
         name: "Ravi Singh",
         image: ravi,
         imageALT: "Profile photo of Ravi Singh",
+        link: "#",
       },
       {
         name: "Steve Rogers",
         image: rogers,
         imageALT: "Profile photo of Steve Rogers",
+        link: "#",
       },
     ];
 
     ReactDOM.render(
       <div id="suggestions">
+        <div className="pagination">
+        <p>Home </p><p> / </p> <p span="bold"> Connect</p>
+      </div>
         <h1>People who share your interests</h1>
         <CardDeck>
           {people.map((people) => {
@@ -195,6 +203,7 @@ function App() {
                 image={people.image}
                 name={people.name}
                 imageAlt={people.imageALT}
+                onclick={people.link}
               />
             );
           })}
@@ -203,6 +212,29 @@ function App() {
       document.getElementById("Container")
     );
   }
+
+  function personas() {
+
+  ReactDOM.render(
+    <div id="personas">
+      <div className="pagination">
+        <p> Home </p><p>  </p> <p span="bold"> Connect </p>
+      </div>
+      <h1>Meryl Streep's interests</h1>
+      <div className="introduction">
+          <img src= {elderlywoman} alt="Elderly woman smiling" className="Meryl"/>
+          <div className="intro_text">
+           <ul>
+             <li>Cooking</li>
+             <li>History</li>
+             <li>Gardening</li>
+             </ul>  </div>
+             <p><b>Email:</b> mstreep@gmail.com</p>
+     </div>
+    </div>,
+    document.getElementById("Container")
+  );
+}
 
   return (
     <div className="main">
