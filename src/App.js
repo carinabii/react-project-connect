@@ -146,7 +146,7 @@ function App() {
     ReactDOM.render(
  
     <div id="suggestions">
-      <h1 className="font-weight-bold">Choose a person you'd like to connect with:</h1>
+      <h1 className="font-weight-bold">People who share your interests</h1>
 
       <Button id="waitMatch"  >Set up a meeting!</Button>
 
