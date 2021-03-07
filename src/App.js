@@ -61,7 +61,7 @@ function App() {
       <Header />
       <Form>
         <Form.Group controlId="name">
-          <Form.Label>What's your name?:</Form.Label>
+          <Form.Label>What's your name?</Form.Label>
           <Form.Control type="text" placeholder="Wanda Vision">
           </Form.Control>
         </Form.Group>
