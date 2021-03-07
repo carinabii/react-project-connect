@@ -195,20 +195,10 @@ function App() {
             
             <h3>Project Connect aims to match </h3>
             <div className="home-btns">
-              <Button onClick={login} variant="secondary" type="submit">
-                Log in{" "}
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="FontAwesomeIcon"
-                />
+              <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/> Log in{" "}
               </Button>
-
-              <Button onClick={register} variant="secondary" type="submit">
-                Register{" "}
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="FontAwesomeIcon"
-                />
+    <br></br><br></br>
+              <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faLightbulb} className="FontAwesomeIcon"/> Register{" "}</Button>
               </Button>
             </div>
           </div>
