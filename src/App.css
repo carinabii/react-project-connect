@@ -88,4 +88,5 @@ p {
 .form-control:valid {
   background-color:  #FFE1E1!important;
   font-size: 24px;
+  border-radius: 41px;
 }
