@@ -1,6 +1,6 @@
 import Header from './components/Header'
 import Btn from './components/Btn'
-import InputBox from './components/InputBox'
+
 
 import Button from 'react-bootstrap/Button';
 import ReactDOM from 'react-dom';
@@ -10,8 +10,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Login from '';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // eslint-disable-next-line no-lone-blocks
-{/*import React, {useState} from 'react';*/}
+{/*import React, {useState} from 'react';
 import React, {useState} from 'react';
+import InputBox from './components/InputBox';*/}
 
 
 function App() {
