@@ -16,6 +16,7 @@ import elderlyman from './images/eldma.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 // eslint-disable-next-line no-lone-blocks
 {/*import React, {useState} from 'react';
 import React, {useState} from 'react';
@@ -45,7 +46,9 @@ function App() {
           <Form.Control type="email" placeholder="wandavision@xxx.com">
           </Form.Control>
         </Form.Group>
-        <Button onClick={suggestions} variant="secondary" type="submit">Submit</Button>
+        <br></br>
+        <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} /> Go back</Button> 
+        <Button onClick={suggestions} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} /></Button>
       </Form>
       {/* <form id="loginForm">
         <label htmlFor="phoneNum">Phone Number:</label>
@@ -83,8 +86,8 @@ function App() {
           </Form.Control>
         </Form.Group>
 
-
-        <Button onClick={interests} variant="secondary" type="submit">Submit</Button>
+        <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} /> Go back</Button> 
+        <Button onClick={interests} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} /></Button>
       </Form>
 
       </div>,
@@ -114,7 +117,8 @@ function App() {
           <Col><Btn id="history" color="pink" text="History"/></Col>
         </Row>
         <br/>
-        <Button variant="secondary" id="submitInterests" onClick={platform}>Submit</Button>
+        <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} /> Go back</Button> 
+        <Button variant="secondary" id="submitInterests" onClick={platform}><FontAwesomeIcon icon={faArrowRight} /></Button>
       </Form.Group>
       </Form>
       {/* <form id="interestForm"> */}
@@ -140,7 +144,8 @@ function App() {
       <Button id="em">Email</Button>
       <br/>
       <br/> 
-      <Button id="submitPlatform" onClick={suggestions}>Submit</Button>
+      <Button onClick={interests} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} /> Go back</Button> 
+      <Button id="submitPlatform" onClick={suggestions}><FontAwesomeIcon icon={faArrowRight} /></Button>
     </form>
     </div>,
     document.getElementById('Container'));
@@ -198,7 +203,7 @@ function App() {
       <br/>
       <br/>
       <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faLightbulb} /> Register</Button>
-       
+    
       <br/>
       <br/>
 
