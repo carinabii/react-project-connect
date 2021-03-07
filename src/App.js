@@ -1,14 +1,11 @@
 import Header from './components/Header'
 import Btn from './components/Btn'
-
-
 import Button from 'react-bootstrap/Button';
 import ReactDOM from 'react-dom';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-
-import Login from '';
+import Login from './components/login.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import People from './components/people.js';
 // eslint-disable-next-line no-lone-blocks
 {/*import React, {useState} from 'react';
 import React, {useState} from 'react';
@@ -106,6 +103,12 @@ function App() {
   function suggestions(){
     // something that allows us to pull data from our database and sort by number of similar interests
     // print out and display best options
+    ReactDOM.render(
+      <div id='suggestions'>
+
+      <People />
+       </div>,
+    document.getElementById('Welcome'));
   }
 
   return (
@@ -115,6 +118,9 @@ function App() {
       <br/>
       <br/>
       <Button onClick={register}>Register</Button>
+      <br/>
+      <br/>
+      <Button onClick={People}>People Test</Button>
       <br/>
       <br/>
 
