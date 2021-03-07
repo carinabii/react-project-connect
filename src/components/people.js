@@ -18,7 +18,7 @@ const  PeopleCard = ({ name, image, imageALT, text }) => (
           className="people__rounded-card"
         />
         <label className="resources__card-label"> {name} </label>
-        <Button variant="primary">Schedule a meeting!</Button>
+        <Button variant="primary">Schedule a meeting</Button>
       </Card>
 
   </Col>
