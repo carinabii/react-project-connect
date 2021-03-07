@@ -50,9 +50,8 @@ function App() {
               placeholder="wandavision@xxx.com"
             ></Form.Control>
           </Form.Group>
-          <Button onClick={suggestions} variant="secondary" type="submit">
-            Submit
-          </Button>
+          <br></br>
+          <Button variant="secondary" id="submitPlatform" onClick={suggestions}> Submit <FontAwesomeIcon icon={faArrowRight} className="FontAwesomeIcon"/></Button>
         </Form>
        
       </div>,
