@@ -203,29 +203,32 @@ function App() {
               
             </div>
           </div>
-        </div>
+        </div> {/*
         <div className="steps">
-        <img src={cmdfDesktop} alt="Figma screenshot of initial get started page" className="cmdfDesktop"/>
-          <h2>How the platform works</h2>
-          <div className="wrap">
-            <div className="card">
-              <div class="card-body">
-                <h4>1. Become a member</h4>
+           <h2>How the platform works</h2> 
+                   <div className="wrap">
+            <div className="home-card">
+              <div class="home-card-body">
+                <h4>1. Create your profile</h4>
               </div>
             </div>
-            <div className="card">
-              <div class="card-body">
-                <h4>2. Let people know your interests</h4>
+            <div className="home-card">
+              <div class="home-card-body">
+                <h4>2. Find others with your same interest</h4>
               </div>
             </div>
-            <div className="card">
-              <div class="card-body">
-                <h4>3. Find others with your same interest</h4>
+            <div className="home-card">
+              <div class="home-card-body">
+                <h4>3. Start your conversation</h4>
               </div>
-            </div>
+         
           </div>
+          <img src={cmdfDesktop} alt="Figma screenshot of initial get started page" className="cmdfDesktop"/>
+     
         </div>
-      </div>
+          </div>*/}
+        
+  </div>
       <div className="footer">
         <h3>Source Code</h3>
         <ul className="FooterSources">
