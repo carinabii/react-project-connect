@@ -16,7 +16,8 @@ import elderlyman from "./images/eldma.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import cmdfDesktop from "./images/cmdf.png";
-
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 // eslint-disable-next-line no-lone-blocks
 {
   /*import React, {useState} from 'react';
@@ -50,50 +51,38 @@ function App() {
             Submit
           </Button>
         </Form>
-        {/* <form id="loginForm">
-        <label htmlFor="phoneNum">Phone Number:</label>
-        <input type="text" id="phoneNum"/>
-        <br/>
-        <label htmlFor="verify">Verification Code</label>
-        <input type="text" id="verify"/>
-        <br/>
-        <Button id="submitLogin" onClick={suggestions}>Submit</Button>
-      </form> */}
+       
       </div>,
-      document.getElementById("Container")
-    );
+      document.getElementById("Container"));
   }
 
   function register() {
     ReactDOM.render(
-      <div id="register">
-        <Header />
-        <Form>
-          <Form.Group controlId="name">
-            <Form.Label>What's your name?</Form.Label>
-            <Form.Control type="text" placeholder="Wanda Vision"></Form.Control>
-          </Form.Group>
+      <div id='register'>      
+      <Header />
+      <Form>
+        <Form.Group controlId="name">
+          <Form.Label>What's your name?</Form.Label>
+          <Form.Control type="text" placeholder="Wanda Vision">
+          </Form.Control>
+        </Form.Group>
 
-          <Form.Group controlId="phone">
-            <Form.Label>What's your phone number?</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="(123) 456-7890"
-            ></Form.Control>
-          </Form.Group>
+        <Form.Group controlId="phone">
+          <Form.Label>What's your phone number?</Form.Label>
+          <Form.Control type="text" placeholder="(123) 456-7890">
+          </Form.Control>
+        </Form.Group>
 
-          <Form.Group controlId="email">
-            <Form.Label>What's your email?</Form.Label>
-            <Form.Control
-              type="email"
-              placeholder="wandavision@xxx.ca"
-            ></Form.Control>
-          </Form.Group>
+        <Form.Group controlId="email">
+          <Form.Label>What's your email?</Form.Label>
+          <Form.Control type="email" placeholder="wandavision@xxx.ca">
+          </Form.Control>
+        </Form.Group>
 
-          <Button onClick={interests} variant="secondary" type="submit">
-            Submit
-          </Button>
-        </Form>
+        <Button onClick={login} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} /> Go back</Button> 
+        <Button onClick={interests} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowRight} /></Button>
+      </Form>
+
       </div>,
       document.getElementById("Container")
     );
@@ -101,47 +90,38 @@ function App() {
 
   function interests() {
     ReactDOM.render(
-      <div id="interest">
-        <h1>What are your interests?</h1>
-        <Form>
-          <Form.Group controlID="interestForm">
-            <Row>
-              <Col>
-                <Btn id="cooking" color="yellow" text="Cooking" />
-              </Col>
-              <Col>
-                <Btn id="sports" color="pink" text="Sports" />
-              </Col>
-            </Row>
-            <br />
-            <Row>
-              <Col>
-                <Btn id="music" color="pink" text="Music" />
-              </Col>
-              <Col>
-                <Btn id="gardening" color="yellow" text="Gardening" />
-              </Col>
-            </Row>
-            <br />
 
-            <Row>
-              <Col>
-                <Btn id="sports" color="yellow" text="Sports" />
-              </Col>
-              <Col>
-                <Btn id="history" color="pink" text="History" />
-              </Col>
-            </Row>
-            <br />
-            <Button variant="secondary" id="submitInterests" onClick={platform}>
-              Submit
-            </Button>
-          </Form.Group>
-        </Form>
-        {/* <form id="interestForm"> */}
+      <div id='interest'>      
+      <h1>What are your interests?</h1>
+      <Form>
+        <Form.Group controlID="interestForm">
+        <Row>
+          <Col><Btn id="cooking" color="yellow" text="Cooking"/></Col>
+          <Col><Btn id="sports" color="pink" text="Sports"/></Col>
+        </Row>
+        <br/>
+        <Row>
+          <Col><Btn id="music" color="pink" text="Music"/></Col>
+          <Col><Btn id="gardening" color="yellow" text="Gardening"/></Col>
+        </Row>
+        <br/>
+
+        <Row>
+          <Col><Btn id="sports" color="yellow" text="Sports"/></Col>
+          <Col><Btn id="history" color="pink" text="History"/></Col>
+        </Row>
+        <br/>
+        <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} /> Go back</Button> 
+        <Button variant="secondary" id="submitInterests" onClick={platform}><FontAwesomeIcon icon={faArrowRight} /></Button>
+      </Form.Group>
+      </Form>
+      {/* <form id="interestForm"> */}
+
+        
+      
+        
       </div>,
-      document.getElementById("Container")
-    );
+      document.getElementById("Container"));
   }
 
   function platform() {
@@ -164,7 +144,8 @@ function App() {
       </div>,
       document.getElementById("Container")
     );
-  }
+    }
+
 
   function suggestions() {
     const people = [
