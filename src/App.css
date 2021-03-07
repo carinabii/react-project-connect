@@ -52,4 +52,10 @@
 
 .Container Button{
   display: inline;
+
+}
+
+#interest Button{
+  width: 50%;
+  
 }

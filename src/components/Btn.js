@@ -1,16 +1,19 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
 
 const Btn = ({id, text, color}) => {
 
     return (
 
-    <button 
+    <Button 
     id={id}
-    style={{backgroundColor: color}}
+    variant="secondary"
+    // style={{backgroundColor: color}}
+    color="steelblue"
     className='btn'
     >
         {text}
-        </button>
+        </Button>
     )
 }
 

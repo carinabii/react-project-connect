@@ -1,13 +1,17 @@
 import Header from './components/Header'
 import Btn from './components/Btn'
-import InputBox from './components/InputBox'
 
 import Button from 'react-bootstrap/Button';
+import { Form } from 'react-bootstrap';
+import { Col , Row } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.css';
+
 import ReactDOM from 'react-dom';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import React, {useState} from 'react';
-import { Form } from 'react-bootstrap';
+
+
+
+
 
 
 function App() {
@@ -91,21 +95,33 @@ function App() {
     ReactDOM.render(
       <div id='interest'>      
       <h1>What are your interests?</h1>
-      <form id="interestForm">
-        <Btn id="cooking" color="yellow" text="Cooking"/>
-        <Btn id="sports" color="pink" text="Sports"/>
+      <br/>
+      <Form>
+        <Form.Group controlID="interestForm">
+        <Row>
+          <Col><Btn id="cooking" color="yellow" text="Cooking"/></Col>
+          <Col><Btn id="sports" color="pink" text="Sports"/></Col>
+        </Row>
         <br/>
+        <Row>
+          <Col><Btn id="music" color="pink" text="Music"/></Col>
+          <Col><Btn id="gardening" color="yellow" text="Gardening"/></Col>
+        </Row>
         <br/>
-        <Btn id="music" color="pink" text="Music"/>
-        <Btn id="gardening" color="yellow" text="Gardening"/>
+
+        <Row>
+          <Col><Btn id="sports" color="yellow" text="Sports"/></Col>
+          <Col><Btn id="history" color="pink" text="History"/></Col>
+        </Row>
         <br/>
-        <br/>
-        <Btn id="sports" color="yellow" text="Sports"/>
-        <Btn id="history" color="pink" text="History"/>
-        <br/>
-        <br/>
-        <Button id="submitInterests" onClick={platform}>Submit</Button>
-      </form>
+        <Button variant="secondary" id="submitInterests" onClick={platform}>Submit</Button>
+        </Form.Group>
+      </Form>
+      {/* <form id="interestForm"> */}
+
+        
+      
+        
       </div>,
       document.getElementById('Container'));
 
