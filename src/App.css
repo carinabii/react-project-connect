@@ -20,9 +20,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.header {
-  text-align: center;
-}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,7 +33,7 @@
 }
 
 .FontAwesomeIcon {
-background-color: transparent;
+  background-color: transparent;
 }
 .App-link {
   color: #61dafb;
@@ -93,11 +91,9 @@ projecttitle {
 }
 
 .Container {
-  align-items: center;
-  width: 90vw;
-  height:90vh;
-  margin: auto;
-  padding:3rem;
+  width: 90%;
+  margin: 5%;
+  padding: 3%;
   border: 5px solid;
   border-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59) 1;
 }
@@ -110,6 +106,12 @@ projecttitle {
   font-size: 24px;
   border-radius: 41px;
   padding: 1rem 2rem;
+}
+
+.Container Button:hover,
+.Container Button:active {
+  background: #6C91DB;
+  color: #ffffff;
 }
 
 #interest Button{
