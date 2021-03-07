@@ -105,19 +105,19 @@ function App() {
       <Form>
         <Form.Group controlID="interestForm">
         <Row>
-          <Col><Btn id="cooking" color="yellow" text="Cooking"/></Col>
-          <Col><Btn id="sports" color="pink" text="Sports"/></Col>
+          <Col><Button id="cooking">Cooking</Button></Col>
+          <Col><Button id="sports">Sports</Button></Col>
         </Row>
         <br/>
         <Row>
-          <Col><Btn id="music" color="pink" text="Music"/></Col>
-          <Col><Btn id="gardening" color="yellow" text="Gardening"/></Col>
+          <Col><Button id="music">Music</Button></Col>
+          <Col><Button id="gardening">Gardening</Button></Col>
         </Row>
         <br/>
 
         <Row>
-          <Col><Btn id="sports" color="yellow" text="Sports"/></Col>
-          <Col><Btn id="history" color="pink" text="History"/></Col>
+          <Col><Button id="knitting">Knitting</Button></Col>
+          <Col><Button id="history">History</Button></Col>
         </Row>
         <br/>
         <Button onClick={register} variant="secondary" type="submit"><FontAwesomeIcon icon={faArrowLeft} className="FontAwesomeIcon"/> Go back</Button> 
