@@ -127,11 +127,11 @@ function App() {
       <div id='platform'>      
       <h1>How would you like to communicate?</h1>
       <form id="communicationForm">
-      <Button id="face">Face to Face</Button>
-      <Button id="snailMail">Snail Mail</Button>
+      <Button id="face">Face to face</Button>
+      <Button id="snailMail">Snail mail</Button>
       <br/>
       <br/>
-      <Button id="phone">Over the Phone</Button>
+      <Button id="phone">Over the phone</Button>
       <Button id="em">Email</Button>
       <br/>
       <br/> 
@@ -182,10 +182,7 @@ function App() {
     }
   </Card>
 </CardDeck>
-
-      </div>
-
-      ,
+ </div>,
     document.getElementById('Container'));
   }
 
