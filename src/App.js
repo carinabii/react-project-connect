@@ -31,7 +31,7 @@ function App() {
       <Form>
         <Form.Group controlId="basicPhone">
           <Form.Label>Phone Number:</Form.Label>
-          <Form.Control type="text" placeholder="(909) 386-4938">
+          <Form.Control type="text" placeholder="(123) 456-7890">
           </Form.Control>
         </Form.Group>
 
@@ -68,7 +68,7 @@ function App() {
 
         <Form.Group controlId="phone">
           <Form.Label>What's your phone number?</Form.Label>
-          <Form.Control type="text" placeholder="(909) 384-5389">
+          <Form.Control type="text" placeholder="(123) 456-7890">
           </Form.Control>
         </Form.Group>
 
