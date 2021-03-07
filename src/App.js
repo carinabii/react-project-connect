@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import React, {useState} from 'react';
+import { Form } from 'react-bootstrap';
 
 
 function App() {
@@ -15,8 +16,21 @@ function App() {
     ReactDOM.render(
       <div id='login'>      
       <Header />
-      <form id="loginForm">
-        {/* <InputBox id="phoneNum" text="Phone Number:"/> */}
+      <Form>
+        <Form.Group controlId="basicPhone">
+          <Form.Label>Phone Number:</Form.Label>
+          <Form.Control type="text" placeholder="(909) 386-4938">
+          </Form.Control>
+        </Form.Group>
+
+        <Form.Group controlId="basicEmail">
+          <Form.Label>Email:</Form.Label>
+          <Form.Control type="email" placeholder="wandavision@xxx.com">
+          </Form.Control>
+        </Form.Group>
+        <Button variant="secondary" type="submit">Submit</Button>
+      </Form>
+      {/* <form id="loginForm">
         <label htmlFor="phoneNum">Phone Number:</label>
         <input type="text" id="phoneNum"/>
         <br/>
@@ -24,16 +38,39 @@ function App() {
         <input type="text" id="verify"/>
         <br/>
         <Button id="submitLogin" onClick={suggestions}>Submit</Button>
-      </form>
+      </form> */}
       </div>,
-       document.getElementById('Welcome'));
+       document.getElementById('Container'));
   }
 
   function register(){
     ReactDOM.render(
       <div id='register'>      
       <Header />
-      <form id="registerForm">
+      <Form>
+        <Form.Group controlId="name">
+          <Form.Label>What's your name?:</Form.Label>
+          <Form.Control type="text" placeholder="Wanda Vision">
+          </Form.Control>
+        </Form.Group>
+
+        <Form.Group controlId="phone">
+          <Form.Label>What's your phone number?</Form.Label>
+          <Form.Control type="text" placeholder="(909) 384-5389">
+          </Form.Control>
+        </Form.Group>
+
+        <Form.Group controlId="email">
+          <Form.Label>What's your email?</Form.Label>
+          <Form.Control type="email" placeholder="wandavision@xxx.ca">
+          </Form.Control>
+        </Form.Group>
+
+
+        <Button variant="secondary" type="submit">Submit</Button>
+      </Form>
+
+      {/* <form id="registerForm">
         <label htmlFor="name">What's your name?</label>
         <input type="text" id="name" placeholder="Wanda Vision"/>
         <br/>
@@ -44,9 +81,9 @@ function App() {
         <input type="text" id="email" placeholder="wandavision@gmail.com"/>
         <br/>
         <Button id="submitRegistration" onClick={interests}>Submit</Button>
-      </form>
+      </form> */}
       </div>,
-       document.getElementById('Welcome'));
+       document.getElementById('Container'));
   
   }
 
@@ -70,7 +107,7 @@ function App() {
         <Button id="submitInterests" onClick={platform}>Submit</Button>
       </form>
       </div>,
-      document.getElementById('Welcome'));
+      document.getElementById('Container'));
 
   }
 
@@ -84,13 +121,13 @@ function App() {
       <br/>
       <br/>
       <Button id="phone">Over the Phone</Button>
-      <Button id="em">email</Button>
+      <Button id="em">Email</Button>
       <br/>
       <br/>
       <Button id="submitPlatform" onClick={suggestions}>Submit</Button>
     </form>
     </div>,
-    document.getElementById('Welcome'));
+    document.getElementById('Container'));
 
   }
 
@@ -100,12 +137,12 @@ function App() {
   }
 
   return (
-    <div id='Welcome'>  
+    <div className='Container' id='Container'>  
       <Header />
-      <Button onClick={login}>Log In</Button>
+      <Button onClick={login} variant="secondary" type="submit">Log in</Button>
       <br/>
       <br/>
-      <Button onClick={register}>Register</Button>
+      <Button onClick={register} variant="secondary" type="submit">Register</Button>
       <br/>
       <br/>
 
