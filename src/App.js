@@ -28,7 +28,7 @@ function App() {
           <Form.Control type="email" placeholder="wandavision@xxx.com">
           </Form.Control>
         </Form.Group>
-        <Button variant="secondary" type="submit">Submit</Button>
+        <Button onClick={suggestions} variant="secondary" type="submit">Submit</Button>
       </Form>
       {/* <form id="loginForm">
         <label htmlFor="phoneNum">Phone Number:</label>
@@ -67,7 +67,7 @@ function App() {
         </Form.Group>
 
 
-        <Button variant="secondary" type="submit">Submit</Button>
+        <Button onClick={interests} variant="secondary" type="submit">Submit</Button>
       </Form>
 
       {/* <form id="registerForm">
