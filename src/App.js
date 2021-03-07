@@ -1,6 +1,6 @@
 import Header from './components/Header'
 import Btn from './components/Btn'
-
+import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Form } from 'react-bootstrap';
 import { Col , Row } from "react-bootstrap";
@@ -8,9 +8,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import { peopleCard, CockroachDB_Placeholder } from './components/people.js';
+import CardDeck from 'react-bootstrap/CardDeck';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import People from './components/people.js';
+import PeopleCard from './components/people.js';
 // eslint-disable-next-line no-lone-blocks
 {/*import React, {useState} from 'react';
 import React, {useState} from 'react';
@@ -134,7 +134,7 @@ function App() {
       <Button id="phone">Over the Phone</Button>
       <Button id="em">Email</Button>
       <br/>
-      <br/>
+      <br/> 
       <Button id="submitPlatform" onClick={suggestions}>Submit</Button>
     </form>
     </div>,
@@ -143,12 +143,45 @@ function App() {
   }
 
   function suggestions(){
-    ReactDOM.render(
- 
-    <div id="suggestions">
-      <h1 className="font-weight-bold">Choose a person you'd like to connect with:</h1>
 
-      <Button id="waitMatch"  >Setup a meeting!</Button>
+    const people = [
+      {
+        name: "Melvin Tang",
+        image: "https://unsplash.com/photos/rsMUNNy0Gk4",
+        imageALT:
+          "#",
+      },
+      {
+        name: "Meryl Streep",
+        image: "https://unsplash.com/photos/jBBaKSjhmqk",
+        imageALT:
+          "#",
+      },
+      {
+        name: "Mae Ploy",
+        image: "https://unsplash.com/photos/jBBaKSjhmqk",
+        imageALT:
+          "#",
+      },
+    ];
+
+    ReactDOM.render(
+
+    <div id="suggestions">
+      <h1>Choose a person you'd like to connect with:</h1>
+      <CardDeck>
+  <Card>
+    {
+      people.map(people => {
+        return <PeopleCard 
+        image={people.image}
+        name={people.name}
+        imageAlt={people.imageALT}
+        />
+      })
+    }
+  </Card>
+</CardDeck>
 
       </div>
 
